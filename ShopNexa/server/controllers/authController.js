@@ -273,10 +273,10 @@ const adminSignup = async (req, res) => {
   try {
     // Restrict only 1 admin creation
     const adminCount = await Admin.countDocuments();
-    if (adminCount >= 1) {
+    if (adminCount >= 100) {
       return res.status(403).json({
         success: false,
-        message: "Only one admin account is allowed",
+        message: "Hundred admin account is allowed for Test Purpose",
       });
     }
 
