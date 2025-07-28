@@ -30,7 +30,7 @@ const Navbar = () => {
         )}
       </div>
       <Link to={"/"} className="text-2xl font-bold">
-        CodeStore
+        ShopNexa
       </Link>
       <ul className="hidden sm:flex gap-2 text-xl">
         <Link to="/admin/signup">Admin-Signup</Link>
